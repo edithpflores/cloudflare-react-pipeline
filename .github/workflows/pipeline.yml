@@ -22,10 +22,10 @@ jobs:
         run: npm install
 
       - name: Run unit tests
-        run: npx vitest run --threads=false
+        run: npx vitest run
 
       - name: Generate coverage report
-        run: npx vitest run --coverage --threads=false
+        run: npx vitest run --coverage
 
       - name: Build project
         run: npm run build
