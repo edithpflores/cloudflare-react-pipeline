@@ -4,14 +4,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   test: {
-    environment: 'jsdom',
+    environment: 'happy-dom',
     globals: true,
     setupFiles: './src/setupTests.js',
     coverage: {
       reporter: ['text', 'html']
-    },
-    alias: {
-      '/vite.svg': '/src/assets/react.svg'
     }
   }
 })
